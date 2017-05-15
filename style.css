@@ -1,0 +1,672 @@
+@import "compass/css3";
+
+/**************
+DEFAULT STYLING
+**************/
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+body, h1, h2, h3, h4, p {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-family: 'Sarina', cursive;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+a:link {
+  color: gray;
+  fill:gray;
+  stroke:gray;
+}
+
+a:visited {
+  color: gray;
+  fill:gray;
+  stroke:gray;
+}
+
+a:hover {
+  color: #70c1ac;
+  fill: #70c1ac;
+  stroke:#70c1ac;
+}
+
+a:active {
+  color: #73439a;
+  fill: #70c1ac;
+  stroke:#70c1ac;
+}
+
+h2 {
+  font-family: 'Lato', sans-serif;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 2em;
+}
+
+h3 {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5em;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.button {
+  text-align: center;
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 2%;
+  text-transform: uppercase;
+  padding: 2%;
+  background-color: #b3395c;
+  color: #fff;
+  font-weight: 400;
+  border: 3px solid #58aadb;
+  border-radius: 5px;
+}
+
+.button:link {
+  background-color: #b3395c;
+  color: #fff;
+}
+
+.button:visited {
+  background-color: #b3395c;
+  color: #fff;
+}
+
+.button:hover {
+  color: #fff;
+  background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+  background-size: 1800% 1800%;
+
+  -webkit-animation: rainbow 18s ease infinite;
+  -z-animation: rainbow 18s ease infinite;
+  -o-animation: rainbow 18s ease infinite;
+  animation: rainbow 18s ease infinite;
+}
+
+.button:active {
+  background-color: #b3395c;
+  color: #fff;
+}
+
+@-webkit-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-moz-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-o-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@keyframes rainbow { 
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+
+/************
+CONTAINER DIV
+************/
+
+#container {
+  margin: 0;
+  padding: 0;
+  /*border: 1px solid blue;*/
+}
+
+/********************
+HORIZONTAL NAVIGATION
+********************/
+
+#horizontal_nav {
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 20px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  font-size: 16px;
+  /*border: 1px solid green;*/
+}
+
+#horizontal_nav ul {
+  padding: 0;
+  margin: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  list-style-type: none;
+  text-align: center;
+}
+
+#horizontal_nav li {
+  padding: 0;
+  margin: 0;
+  display: inline;
+}
+
+#horizontal_nav a {
+  padding: 0;
+  border: 1px solid white;
+  padding-left: 6px;
+  padding-right: 6px;
+  margin: 0;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.text_nav {
+  font-family: 'Lato', 'sans-serif';
+  font-weight: 900;
+  font-style: normal;
+  font-size: 1.2em;
+}
+
+#logo {
+  width: 10%;
+  /*border: 1px solid purple;*/
+}
+
+#logo a{
+  margin: 0;
+  padding: 0;
+  width: 15%;
+  /*border: 1px solid red;*/
+}
+
+#logo img{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  /*border: 1px solid green;*/
+  vertical-align: middle;
+}
+
+/***********
+MAIN CONTENT
+***********/
+
+#dynamic_content {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  /*padding-top: 2%;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 0;*/
+  /*border: 1px solid turquoise;*/
+  /*display: inline;*/
+  /*position:relative;*/
+}
+
+.placeholder {
+  margin: 0;
+  margin-top: 1.5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 0;
+  text-align: center;
+  font-size: 2em;
+  color: #fccd0d;
+}
+
+.page_links a {
+  margin: 0;
+  line-height: 3em;
+  padding: 5px;
+  border: 1px solid white;
+}
+
+.page_links a:hover {
+  color:black;
+  border: 1px solid black;
+}
+
+.page_links a:active {
+  color:darkgray;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  display: inline-block; /*for IE/Mac*/
+}
+
+/*******************************
+WEB DEVELOPMENT & GRAPHIC DESIGN
+*******************************/
+
+.project_links {
+  margin: 0;
+  margin-top: 1.5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  /*margin-bottom: 2%;*/
+  padding: 0;
+  /*display: block;
+  vertical-align: center;
+  float: right;*/
+  /*border: 1px solid red;*/
+}
+
+.image_wrapper {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  position: relative;
+  /*display: inline-block;*/
+  top:0;
+  /*border: 1px solid brown;*/
+}
+
+.image_style {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hover_effect {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+}
+
+.hover_effect:hover {
+  opacity: 1;
+}
+
+.bg_color {
+  width: inherit;
+  height: inherit;
+  /*background-color: #ffd556;*/
+  background-color: #7947b2;
+  opacity: 0.6;
+  position: relative;
+}
+
+.image_label {
+  color: white;
+  opacity: 1;
+  text-align: center;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  margin: auto;
+  padding: 20% 0 0 0;
+  /*border: 1px solid magenta;*/
+}
+
+/*******************
+PROJECT DESCRIPTIONS
+*******************/
+
+.project_descriptions {
+  margin: 0;
+  margin-top: 1.5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 0;
+  color: black;
+}
+
+.display_text_wrapper {
+  margin: 0;
+  margin-top: 2%;
+  padding: 0;
+  display: inline-block;
+  width: 100%;
+  /*border: 1px solid gray;*/
+}
+
+.textleft {
+  text-align: left;
+}
+
+.display_wrapper {
+  margin-top: 2%;
+  text-align: center;
+  /*border: 1px solid brown;*/
+}
+
+.display_text {
+  vertical-align: top;
+  /*border: 1px solid purple;*/
+}
+
+section {
+  margin:0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+section h2, h3 {
+  margin: 0;
+  padding: 0;
+}
+
+section h2 {
+  color: gray;
+}
+
+section h3 {
+  margin-top: 1%;
+  color: #3d58a7;
+}
+
+section p {
+  padding-top: 1%;
+  font-size: 1.1em;
+}
+
+figcaption {
+  text-align: center;
+  padding-top: .5%;
+}
+
+.sidebar {
+  width: 40%;
+}
+
+.sidebar2 {
+  width: 57%;
+  margin-left: 2%;
+  font-size: 1.2em;
+}
+
+.project_images {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  /*border: 1px solid brown;*/
+}
+
+.project_images img {
+  width: 100%;
+  height: auto;
+}
+
+.comparison_images {
+  margin: 0;
+  padding: 1%;
+  /*border: 1px solid green;*/
+}
+
+.external_links {
+  margin: 0;
+  padding: 0;
+}
+
+.external_links p {
+  margin-top: 1%;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+/************
+GALLERY PAGES
+************/
+
+.gallery {
+  margin: 0;
+  margin-top: 1.5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 0;
+}
+
+/*********
+ABOUT PAGE
+*********/
+.boundary {
+  width: 80%;
+  margin: 0 auto;
+  border: 1px solid white;
+}
+
+#my_pic {
+  padding: 0;
+  margin: 0;
+  float: left;
+  position: relative;
+  top: 0;
+  left: 25%;
+  /*border: 1px solid green;*/
+  width: 25%;
+  /*line-height: 100%;*/
+}
+
+#my_pic figure {
+  margin: 0;
+  padding: 0;
+}
+
+#my_pic img {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  max-height: none;
+  display: block;
+}
+
+#my_bio {
+  margin: 0 auto;
+  margin-top: 18%;
+  padding: 2%;
+  width: 45%;
+  border-radius: 10px;
+  /*border: 1px solid purple;*/
+  padding-left: 20px;
+  background-color: rgba(88, 170, 219, 0.4);
+
+}
+
+.header_text {
+  width: 180px; 
+  background-color: rgba(88, 170, 219, 0.8); 
+  border: .2em dotted #b3395c;
+  outline-width: thick;
+  border-radius: 5px; 
+  text-align: center; 
+  padding: 2%;
+  margin-left: auto;
+  margin-right: 15%; 
+}
+
+#my_bio section {
+  margin: 0;
+  padding: 0;
+}
+
+#my_bio h3 {
+  margin: 0;
+  padding: 1%;
+  font-family: 'Lato', 'sans-serif';
+  font-weight: 900;
+  font-style: normal;
+  font-size: 1.5em;
+  line-height: 100%;
+  color: #b3395c;
+  /*text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;*/
+  text-align: center;
+  /*border: 1px solid blue;*/
+}
+
+#my_bio p {
+  padding-top: 2%;
+  font-size: 18px;
+  line-height: 1.3em;
+  text-align: left;
+}
+
+/*************
+FOOTER CONTENT
+*************/
+
+#footer_content {
+  margin: 0;
+  padding: 0;
+  /*border: 1px solid blue;*/
+}
+
+#footer_content footer {
+  padding-top: 3%;
+  padding-right: 5%;
+  padding-left: 5%;
+  padding-bottom: 1.2%;
+  text-align: center;
+  color: gray;
+  /*border: 1px solid gray;*/
+}
+
+#footer_content p {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+/*#footer_content img {
+  color: gray;
+  max-width: 5%;
+  height:auto;
+}*/
+
+.icons {
+  max-width: 5%;
+  height: auto;
+}
+
+/*.svg_links {
+  fill:gray;
+}*/
+
+#footer_content a {
+  margin: 0;
+  padding: 0;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+.fallback {
+  display: none;
+}
+
+.no_svg #fallback {
+  margin: 0;
+  padding: 0;
+  background-image: url(Images/Icons/mail.png);
+  max-width: 5%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/*make your SVG's accessible */
+
+/* BEGIN MEDIA QUERIES */
+@media only screen and (max-width: 480px)  {
+  .mobile_clearfix:before,
+  .mobile_clearfix:after {
+    content: " ";
+    display: table;
+  }
+
+  .mobile_clearfix:after {
+    clear: both;
+  }
+
+  .mobile_clearfix {
+    display: inline-block; /*for IE/Mac*/
+  }
+
+  .button {
+    width: 60% !important;
+    padding: 3% !important;
+  }
+  
+  /*********
+  ABOUT PAGE 
+  *********/
+  .boundary {
+    border: none !important;
+    padding: 
+  }
+
+  #my_pic {
+    margin: 0 !important;
+    /*margin: 0 auto !important;*/
+    padding: 0 !important;
+    width: 45% !important;
+    max-width: 480px !important;
+    max-height: none !important;
+    float: none !important;
+    clear: both !important;
+    /*border: 1px solid blue;*/
+    /*position: absolute !important;*/
+    /*float: left;
+    top: 12%;
+    left: 27%;
+    */
+    /*left: 0;*/
+    display: block !important;
+  }
+
+  #my_bio {
+    /*margin: 0 auto !important;*/
+    margin: 0 auto!important;
+    clear: both !important;
+    float: none !important;
+    padding: 4% !important;
+    width: 90% !important;
+    /*margin-top: 15% !important;*/
+  }
+
+  .header_text {
+    margin: 0 auto !important;
+  }
+
+
+}
+
